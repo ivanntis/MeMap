@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/option_list_all"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/label_allNote"
+        android:icon="@drawable/all_note"/>
+    <item
+        android:id="@+id/option_list_active"
+        android:orderInCategory="200"
+        android:showAsAction="never"
+        android:title="@string/label_activeNote"
+        android:icon="@drawable/active_note"/>
+    <item
+        android:id="@+id/option_list_new"
+        android:orderInCategory="300"
+        android:showAsAction="never"
+        android:title="@string/label_newNote"
+        android:icon="@drawable/new_note"/>
+
+     <item
+        android:id="@+id/option_map_view"
+        android:orderInCategory="400"
+        android:showAsAction="never"
+        android:title="@string/label_mapNote"
+        android:icon="@drawable/view_map"/>
+</menu>

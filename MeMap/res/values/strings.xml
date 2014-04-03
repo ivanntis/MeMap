@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MeMap</string>
+    <string name="action_settings">Opciones</string>
+    <string name="label_userEmail">Usuario</string>
+    <string name="input_hint_userMail">username@mailserver.com</string>
+    <string name="label_password">Contraseña</string>
+    <string name="input_hint_password">*******</string>
+    <string name="slogan">Recordamos por ti!Recordamos por ti!</string>
+    <string name="buttonLogin">Ingresar</string>
+    <string name="buttonRecoverPass">Olvido Password?</string>
+    <string name="copy_right">Derechos Reservados - Gizmo Dale ON a tus ideas!!</string>
+    <string name="title_activity_reset_password">Restablecer Contraseña</string>
+    <string name="title_activity_change_password">Cambio de Contraseña</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="checkBoxRemember">Recordar datos de ingreso</string>
+    <string name="title_note_list">Notas</string>
+    <string name="title_note_detail">Detalle Nota</string>
+    <string name="title_map_activity">Notas en Mapa</string>
+    <string name="title_activity_new_mem">Nueva Nota</string>
+    <string name="label_newPassword">Nuevo Password</string>
+    <string name="label_confirmPassword">Confirmar Nuevo Password</string>
+    <string name="label_Guardar">Aceptar</string>
+    <string name="label_Cancelar">Cancelar</string>
+    <string name="label_nameNote">Nombre</string>
+    <string name="label_desciptionNote">Descripción</string>
+    <string name="label_distance">Distancia de alerta</string>
+    <string name="hint_nameNote">Nombre Corto</string>
+    <string name="hint_descrptionNote">Descripcion de la nota</string>
+    <string name="label_activeNote">Activas</string>
+    <string name="label_allNote">Todas</string>
+    <string name="label_mapNote">Mapa</string>
+    <string name="label_newNote">Nueva</string>
+    
+    
+    
+    
+    
+    
+
+</resources>

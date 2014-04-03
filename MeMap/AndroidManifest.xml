@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gizmoideas.mobile.memap"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+  	
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAhqZenCYszBHXHI5MRoUrCiWyXDm5kO6Q" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.gizmoideas.mobile.memap.activity.LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gizmoideas.mobile.memap.activity.ChangePasswordActivity"
+            android:label="@string/title_activity_change_password" >
+        </activity>
+        <activity
+            android:name="com.gizmoideas.mobile.memap.activity.MyMapActivity"
+            android:label="@string/title_map_activity" >
+        </activity>
+
+        <receiver android:name="com.gizmoideas.mobile.memap.service.PositionReceiver" >
+        </receiver>
+        <receiver
+            android:name="com.gizmoideas.mobile.memap.service.StartServiceReceiver"
+            android:enabled="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.gizmoideas.mobile.memap.service.BackgroundPosition" >
+        </service>
+
+        <activity
+            android:name="com.gizmoideas.mobile.memap.activity.NoteListActivity"
+            android:label="@string/title_note_list" >
+        </activity>
+        <activity
+            android:name="com.gizmoideas.mobile.memap.activity.NoteDetailActivity"
+            android:label="@string/title_note_detail"
+            android:parentActivityName="com.gizmoideas.mobile.memap.activity.NoteListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.gizmoideas.mobile.memap.NoteListActivity" />
+        </activity>
+       
+        <activity
+            android:name="com.gizmoideas.mobile.memap.activity.NewNoteActivity"
+            android:label="@string/title_activity_new_mem" >
+        </activity>
+    </application>
+
+</manifest>

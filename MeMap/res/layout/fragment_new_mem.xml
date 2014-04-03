@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".NewNoteActivity">
+
+    <TextView
+        android:id="@+id/labelNoteName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_nameNote" />
+    
+    <EditText
+        android:id="@+id/noteName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelNoteName"        
+        android:hint="@string/hint_nameNote" 
+        android:maxLength="80" />    
+
+    <TextView
+        android:id="@+id/labelDescriptionNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/noteName"
+        android:text="@string/label_desciptionNote" />
+    
+    <EditText
+        android:id="@+id/descriptionNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelDescriptionNote"
+        android:inputType="textMultiLine" 
+        android:hint="@string/hint_descrptionNote" />
+
+    <TextView
+        android:id="@+id/labelDistance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"  
+        android:layout_below="@+id/descriptionNote" 
+        android:text="@string/label_distance"/>
+    
+    <SeekBar
+        android:id="@+id/distance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelDistance"/>
+    
+    <RelativeLayout
+        android:id="@+id/LayoutButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/distance"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        >
+        
+        <Button
+	        android:id="@+id/buttonLogin"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/label_Guardar" 
+	        android:onClick="saveNote" />
+	    <Button
+	        android:id="@+id/buttonRecoverPass"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/buttonLogin"
+	        android:text="@string/label_Cancelar" 
+	        android:onClick="cancelNote" />
+    </RelativeLayout>
+
+</RelativeLayout>
